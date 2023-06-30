@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class SaveController extends BaseController{
     public function store(Request $request)
     {
-        $file = file_get_contents('C:\Users\Mw\Desktop\forRead.php', FILE_USE_INCLUDE_PATH);
+        $file = file_get_contents(__FILE__, FILE_USE_INCLUDE_PATH);
         return response()->json(
             array(
                 'content'=>$file,
