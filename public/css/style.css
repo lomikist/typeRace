@@ -3,11 +3,16 @@
     width: 100%;
 }
 #text_field{
+    /*scroll-behavior: auto;*/
+    white-space: pre-wrap;
     align-self: center;
     justify-self: center;
     height: 300px;
     width: 80%;
     background-color: #092239;
+    color: #b9b9b9;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .first_line {
     align-self: center;

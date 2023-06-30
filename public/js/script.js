@@ -8,10 +8,14 @@ $(document).ready(function(){
             dataType: 'json',
             data: `${file_name}`,
             success: function(data) {
-                console.log(data)
+
+                // console.log(data.content)
+                str = data.content;
+
+                $('#text_field').text(str);
             },
             reject(reason) {
-                console.log(1234);
+                console.log('error');
             }
         });
     });
