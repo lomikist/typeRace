@@ -52,7 +52,7 @@
             <div class="keys">n</div>
             <div class="keys">m</div>
         </div>
-        <input placeholder="witer here" class="third_line input">
+        <input placeholder="witer here" class="third_line input" id="text_enter">
     </div>
     <script src={{ url('js/script.js') }}></script>
 </body>

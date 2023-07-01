@@ -9,9 +9,11 @@ class SaveController extends BaseController{
     public function store(Request $request)
     {
         $file = file_get_contents(__FILE__, FILE_USE_INCLUDE_PATH);
+        $file = str_replace( array("\r","\t","\n"),' ',$file);
+        $array = explode(' ',$file);
         return response()->json(
             array(
-                'content'=>$file,
+                'content'=>$array,
             )
         );
     }

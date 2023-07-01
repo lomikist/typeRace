@@ -2,6 +2,11 @@
     display: grid;
     width: 100%;
 }
+
+.active {
+    background-color: #966f6f;
+}
+
 #text_field{
     /*scroll-behavior: auto;*/
     white-space: pre-wrap;
